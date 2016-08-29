@@ -20,11 +20,11 @@
 	],
 	"autoload":{
 		"files":[
-			"registration.php",
-			"psr-4":{
-				"Lagodoy\\Blog\\": ""
-			}
-		]
+			"registration.php"
+		],
+		"psr-4":{
+			"Lagodoy\\Blog\\": ""
+		}
 	},
     "extra": {
         "map": [

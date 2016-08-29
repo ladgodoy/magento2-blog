@@ -1,9 +1,9 @@
 {
     "name": "ladgodoy/magento2-blog",
     "description": "Um módulo Simples de Blog.",
-	"minimum-stability": "alpha",
+	"minimum-stability": "dev",
     "type": "magento2-module",
-    "version": "dev",
+    "version": "1.0.0",
     "license": [
         "OSL-3.0",
         "AFL-3.0"

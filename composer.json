@@ -3,7 +3,7 @@
     "description": "Um módulo Simples de Blog.",
 	"minimum-stability": "alpha",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.0.0-stable",
     "license": [
         "OSL-3.0",
         "AFL-3.0"

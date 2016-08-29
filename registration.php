@@ -1,6 +1,6 @@
 <?php
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Ladgodoy_Blog',
+    'Lagodoy_Blog',
     __DIR__
 );

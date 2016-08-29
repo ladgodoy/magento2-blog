@@ -17,4 +17,4 @@ I'm covering how to create a fully functional Magento 2 module from scratch.. ev
 
 Specify the version of the tutorial you need, and go go go.
 
-    composer require ladgodoy/magento2-blog-module-example:0.5.2
+    composer require ladgodoy/magento2-blog

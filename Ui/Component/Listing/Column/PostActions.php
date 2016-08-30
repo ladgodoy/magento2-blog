@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Ui\Component\Listing\Column;
+namespace Ladgodoy\Blog\Ui\Component\Listing\Column;
 
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 use Magento\Framework\View\Element\UiComponentFactory;

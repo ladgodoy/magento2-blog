@@ -1,6 +1,6 @@
-<?php namespace Lagodoy\Blog\Model;
+<?php namespace Ladgodoy\Blog\Model;
 
-use Lagodoy\Blog\Api\Data\PostInterface;
+use Ladgodoy\Blog\Api\Data\PostInterface;
 use Magento\Framework\DataObject\IdentityInterface; //This interface is used for models which require cache refresh after creation/updating/deletion, and models that render information to the frontend.
 
 class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterface, IdentityInterface
@@ -62,7 +62,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      */
     protected function _construct()
     {
-        $this->_init('Lagodoy\Blog\Model\ResourceModel\Post');
+        $this->_init('Ladgodoy\Blog\Model\ResourceModel\Post');
     }
 
     /**
@@ -185,7 +185,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set ID
      *
      * @param int $id
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setId($id)
     {
@@ -196,7 +196,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set URL Key
      *
      * @param string $url_key
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setUrlKey($url_key)
     {
@@ -207,7 +207,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set title
      *
      * @param string $title
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setTitle($title)
     {
@@ -218,7 +218,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set content
      *
      * @param string $content
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setContent($content)
     {
@@ -229,7 +229,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set creation time
      *
      * @param string $creation_time
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setCreationTime($creation_time)
     {
@@ -240,7 +240,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set update time
      *
      * @param string $update_time
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setUpdateTime($update_time)
     {
@@ -251,7 +251,7 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
      * Set is active
      *
      * @param int|bool $is_active
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setIsActive($is_active)
     {

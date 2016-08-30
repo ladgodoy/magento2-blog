@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Lagodoy\Blog\Block\PostList" name="blog.list" template="Lagodoy_Blog::list.phtml" />
+            <block class="Ladgodoy\Blog\Block\PostList" name="blog.list" template="Ladgodoy_Blog::list.phtml" />
         </referenceContainer>
     </body>
 </page>

@@ -1,4 +1,4 @@
-<?php namespace Lagodoy\Blog\Model\ResourceModel\Post;
+<?php namespace Ladgodoy\Blog\Model\ResourceModel\Post;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -14,7 +14,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
      */
     protected function _construct()
     {
-        $this->_init('Lagodoy\Blog\Model\Post', 'Lagodoy\Blog\Model\ResourceModel\Post');
+        $this->_init('Ladgodoy\Blog\Model\Post', 'Ladgodoy\Blog\Model\ResourceModel\Post');
     }
 
 }

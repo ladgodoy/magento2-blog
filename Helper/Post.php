@@ -1,4 +1,4 @@
-<?php namespace Lagodoy\Blog\Helper;
+<?php namespace Ladgodoy\Blog\Helper;
 
 use Magento\Framework\App\Action\Action;
 
@@ -6,7 +6,7 @@ class Post extends \Magento\Framework\App\Helper\AbstractHelper
 {
 
     /**
-     * @var \Lagodoy\Blog\Model\Post
+     * @var \Ladgodoy\Blog\Model\Post
      */
     protected $_post;
 
@@ -19,13 +19,13 @@ class Post extends \Magento\Framework\App\Helper\AbstractHelper
      * Constructor
      *
      * @param \Magento\Framework\App\Helper\Context $context
-     * @param \Lagodoy\Blog\Model\Post $post
+     * @param \Ladgodoy\Blog\Model\Post $post
      * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
      * @SuppressWarnings(PHPMD.ExcessiveParameterList)
      */
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
-        \Lagodoy\Blog\Model\Post $post,
+        \Ladgodoy\Blog\Model\Post $post,
         \Magento\Framework\View\Result\PageFactory $resultPageFactory
     )
     {
@@ -70,7 +70,7 @@ class Post extends \Magento\Framework\App\Helper\AbstractHelper
         // Magento is event driven after all, lets remember to dispatch our own, to help people
         // who might want to add additional functionality, or filter the posts somehow!
         $this->_eventManager->dispatch(
-            'lagodoy_blog_post_render',
+            'Ladgodoy_blog_post_render',
             ['post' => $this->_post, 'controller_action' => $action]
         );
 

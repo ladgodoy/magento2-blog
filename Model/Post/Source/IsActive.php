@@ -1,19 +1,19 @@
 <?php
-namespace Lagodoy\Blog\Model\Post\Source;
+namespace Ladgodoy\Blog\Model\Post\Source;
 
 class IsActive implements \Magento\Framework\Data\OptionSourceInterface
 {
     /**
-     * @var \Lagodoy\Blog\Model\Post
+     * @var \Ladgodoy\Blog\Model\Post
      */
     protected $post;
 
     /**
      * Constructor
      *
-     * @param \Lagodoy\Blog\Model\Post $post
+     * @param \Ladgodoy\Blog\Model\Post $post
      */
-    public function __construct(\Lagodoy\Blog\Model\Post $post)
+    public function __construct(\Ladgodoy\Blog\Model\Post $post)
     {
         $this->post = $post;
     }

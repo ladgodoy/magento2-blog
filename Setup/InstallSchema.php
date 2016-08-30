@@ -1,4 +1,4 @@
-<?php namespace Lagodoy\Blog\Setup;
+<?php namespace Ladgodoy\Blog\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -21,7 +21,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer->startSetup();
 
         $table = $installer->getConnection()
-            ->newTable($installer->getTable('lagodoy_blog_post'))
+            ->newTable($installer->getTable('ladgodoy_blog_post'))
             ->addColumn(
                 'post_id',
                 Table::TYPE_SMALLINT,
@@ -36,7 +36,7 @@ class InstallSchema implements InstallSchemaInterface
             ->addColumn('creation_time', Table::TYPE_DATETIME, null, ['nullable' => false], 'Creation Time')
             ->addColumn('update_time', Table::TYPE_DATETIME, null, ['nullable' => false], 'Update Time')
             ->addIndex($installer->getIdxName('blog_post', ['url_key']), ['url_key'])
-            ->setComment('Lagodoy Blog Posts');
+            ->setComment('Ladgodoy Blog Posts');
 
         $installer->getConnection()->createTable($table);
 

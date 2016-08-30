@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Model\ResourceModel;
+namespace Ladgodoy\Blog\Model\ResourceModel;
 
 /**
  * Blog post mysql resource
@@ -35,7 +35,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('lagodoy_blog_post', 'post_id');
+        $this->_init('ladgodoy_blog_post', 'post_id');
     }
 
     /**
@@ -91,7 +91,7 @@ class Post extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      *
      * @param string $field
      * @param mixed $value
-     * @param \lagodoy\Blog\Model\Post $object
+     * @param \ladgodoy\Blog\Model\Post $object
      * @return \Zend_Db_Select
      */
     protected function _getLoadSelect($field, $value, $object)

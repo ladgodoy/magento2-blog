@@ -23,14 +23,14 @@
 			"registration.php"
 		],
 		"psr-4":{
-			"Lagodoy\\Blog\\": ""
+			"Ladgodoy\\Blog\\": ""
 		}
 	},
     "extra": {
         "map": [
             [
                 "*",
-                "Lagodoy/Blog"
+                "Ladgodoy/Blog"
             ]
         ]
     }

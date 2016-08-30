@@ -1,14 +1,14 @@
-<?php namespace Lagodoy\Blog\Test\Unit\Block;
+<?php namespace Ladgodoy\Blog\Test\Unit\Block;
 
 class PostViewTest extends \PHPUnit_Framework_TestCase {
 
     /**
-     * @var \Lagodoy\Blog\Model\Post
+     * @var \Ladgodoy\Blog\Model\Post
      */
     protected $post;
 
     /**
-     * @var \Lagodoy\Blog\Block\PostView
+     * @var \Ladgodoy\Blog\Block\PostView
      */
     protected $block;
 
@@ -20,8 +20,8 @@ class PostViewTest extends \PHPUnit_Framework_TestCase {
     protected function setUp()
     {
         $objectManager = new \Magento\Framework\TestFramework\Unit\Helper\ObjectManager($this);
-        $this->block = $objectManager->getObject('Lagodoy\Blog\Block\PostView');
-        $this->post = $objectManager->getObject('Lagodoy\Blog\Model\Post');
+        $this->block = $objectManager->getObject('Ladgodoy\Blog\Block\PostView');
+        $this->post = $objectManager->getObject('Ladgodoy\Blog\Model\Post');
         $reflection = new \ReflectionClass($this->post);
         $reflectionProperty = $reflection->getProperty('_idFieldName');
         $reflectionProperty->setAccessible(true);
@@ -35,7 +35,7 @@ class PostViewTest extends \PHPUnit_Framework_TestCase {
         $id = 1;
         $this->block->setPost($this->post);
         $this->assertEquals(
-            [\Lagodoy\Blog\Model\Post::CACHE_TAG . '_' . $id],
+            [\Ladgodoy\Blog\Model\Post::CACHE_TAG . '_' . $id],
             $this->block->getIdentities()
         );
     }

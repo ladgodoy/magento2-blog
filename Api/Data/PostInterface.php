@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Api\Data;
+namespace Ladgodoy\Blog\Api\Data;
 
 
 interface PostInterface
@@ -68,7 +68,7 @@ interface PostInterface
      * Set ID
      *
      * @param int $id
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setId($id);
 
@@ -76,7 +76,7 @@ interface PostInterface
      * Set URL Key
      *
      * @param string $url_key
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setUrlKey($url_key);
 
@@ -91,7 +91,7 @@ interface PostInterface
      * Set title
      *
      * @param string $title
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setTitle($title);
 
@@ -99,7 +99,7 @@ interface PostInterface
      * Set content
      *
      * @param string $content
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setContent($content);
 
@@ -107,7 +107,7 @@ interface PostInterface
      * Set creation time
      *
      * @param string $creationTime
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setCreationTime($creationTime);
 
@@ -115,7 +115,7 @@ interface PostInterface
      * Set update time
      *
      * @param string $updateTime
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setUpdateTime($updateTime);
 
@@ -123,7 +123,7 @@ interface PostInterface
      * Set is active
      *
      * @param int|bool $isActive
-     * @return \Lagodoy\Blog\Api\Data\PostInterface
+     * @return \Ladgodoy\Blog\Api\Data\PostInterface
      */
     public function setIsActive($isActive);
 }

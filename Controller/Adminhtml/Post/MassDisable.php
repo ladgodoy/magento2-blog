@@ -1,9 +1,9 @@
 <?php
-namespace Lagodoy\Blog\Controller\Adminhtml\Post;
+namespace Ladgodoy\Blog\Controller\Adminhtml\Post;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Ui\Component\MassAction\Filter;
-use Lagodoy\Blog\Model\ResourceModel\Post\CollectionFactory;
+use Ladgodoy\Blog\Model\ResourceModel\Post\CollectionFactory;
 use Magento\Framework\Controller\ResultFactory;
 
 /**

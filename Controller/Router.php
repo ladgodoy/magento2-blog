@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller;
+namespace Ladgodoy\Blog\Controller;
 
 /**
  * Cms Controller Router
@@ -23,7 +23,7 @@ class Router implements \Magento\Framework\App\RouterInterface
     /**
      * Post factory
      *
-     * @var \Lagodoy\Blog\Model\PostFactory
+     * @var \Ladgodoy\Blog\Model\PostFactory
      */
     protected $_postFactory;
 
@@ -52,14 +52,14 @@ class Router implements \Magento\Framework\App\RouterInterface
      * @param \Magento\Framework\App\ActionFactory $actionFactory
      * @param \Magento\Framework\Event\ManagerInterface $eventManager
      * @param \Magento\Framework\UrlInterface $url
-     * @param \Lagodoy\Blog\Model\PostFactory $postFactory
+     * @param \Ladgodoy\Blog\Model\PostFactory $postFactory
      * @param \Magento\Framework\App\ResponseInterface $response
      */
     public function __construct(
         \Magento\Framework\App\ActionFactory $actionFactory,
         \Magento\Framework\Event\ManagerInterface $eventManager,
         \Magento\Framework\UrlInterface $url,
-        \Lagodoy\Blog\Model\PostFactory $postFactory,
+        \Ladgodoy\Blog\Model\PostFactory $postFactory,
         \Magento\Framework\App\ResponseInterface $response
     ) {
         $this->actionFactory = $actionFactory;
@@ -80,7 +80,7 @@ class Router implements \Magento\Framework\App\RouterInterface
         $url_key = trim($request->getPathInfo(), '/blog/');
         $url_key = rtrim($url_key, '/');
 
-        /** @var \Lagodoy\Blog\Model\Post $post */
+        /** @var \Ladgodoy\Blog\Model\Post $post */
         $post = $this->_pageFactory->create();
         $post_id = $post->checkUrlKey($url_key);
         if (!$post_id) {

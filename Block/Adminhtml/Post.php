@@ -1,5 +1,5 @@
 <?php
-namespace Ashsmith\Blog\Block\Adminhtml;
+namespace Ladgodoy\Blog\Block\Adminhtml;
 
 class Post extends \Magento\Backend\Block\Widget\Grid\Container
 {

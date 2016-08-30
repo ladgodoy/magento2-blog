@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller\Index;
+namespace Ladgodoy\Blog\Controller\Index;
 
 use \Magento\Framework\App\Action\Action;
 

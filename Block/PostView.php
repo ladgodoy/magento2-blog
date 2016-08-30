@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Block;
+namespace Ladgodoy\Blog\Block;
 
 class PostView extends \Magento\Framework\View\Element\Template implements
     \Magento\Framework\DataObject\IdentityInterface
@@ -9,14 +9,14 @@ class PostView extends \Magento\Framework\View\Element\Template implements
      * Construct
      *
      * @param \Magento\Framework\View\Element\Template\Context $context
-     * @param \Lagodoy\Blog\Model\Post $post
-     * @param \Lagodoy\Blog\Model\PostFactory $postFactory
+     * @param \Ladgodoy\Blog\Model\Post $post
+     * @param \Ladgodoy\Blog\Model\PostFactory $postFactory
      * @param array $data
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Lagodoy\Blog\Model\Post $post,
-        \Lagodoy\Blog\Model\PostFactory $postFactory,
+        \Ladgodoy\Blog\Model\Post $post,
+        \Ladgodoy\Blog\Model\PostFactory $postFactory,
         array $data = []
     )
     {
@@ -26,7 +26,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
     }
 
     /**
-     * @return \Lagodoy\Blog\Model\Post
+     * @return \Ladgodoy\Blog\Model\Post
      */
     public function getPost()
     {
@@ -36,7 +36,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
         // that has been filtered differently!
         if (!$this->hasData('post')) {
             if ($this->getPostId()) {
-                /** @var \Lagodoy\Blog\Model\Post $page */
+                /** @var \Ladgodoy\Blog\Model\Post $page */
                 $post = $this->_postFactory->create();
             } else {
                 $post = $this->_post;
@@ -53,7 +53,7 @@ class PostView extends \Magento\Framework\View\Element\Template implements
      */
     public function getIdentities()
     {
-        return [\Lagodoy\Blog\Model\Post::CACHE_TAG . '_' . $this->getPost()->getId()];
+        return [\Ladgodoy\Blog\Model\Post::CACHE_TAG . '_' . $this->getPost()->getId()];
     }
 
 }

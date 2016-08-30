@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Block\Adminhtml\Post;
+namespace Ladgodoy\Blog\Block\Adminhtml\Post;
 
 class Edit extends \Magento\Backend\Block\Widget\Form\Container
 {
@@ -32,12 +32,12 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
     protected function _construct()
     {
         $this->_objectId = 'post_id';
-        $this->_blockGroup = 'Lagodoy_Blog';
+        $this->_blockGroup = 'Ladgodoy_Blog';
         $this->_controller = 'adminhtml_post';
 
         parent::_construct();
 
-        if ($this->_isAllowedAction('Lagodoy_Blog::save')) {
+        if ($this->_isAllowedAction('Ladgodoy_Blog::save')) {
             $this->buttonList->update('save', 'label', __('Save Blog Post'));
             $this->buttonList->add(
                 'saveandcontinue',
@@ -56,7 +56,7 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
             $this->buttonList->remove('save');
         }
 
-        if ($this->_isAllowedAction('Lagodoy_Blog::post_delete')) {
+        if ($this->_isAllowedAction('Ladgodoy_Blog::post_delete')) {
             $this->buttonList->update('delete', 'label', __('Delete Post'));
         } else {
             $this->buttonList->remove('delete');

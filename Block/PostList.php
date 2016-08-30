@@ -1,14 +1,14 @@
 <?php
-namespace Lagodoy\Blog\Block;
+namespace Ladgodoy\Blog\Block;
 
-use Lagodoy\Blog\Api\Data\PostInterface;
-use Lagodoy\Blog\Model\ResourceModel\Post\Collection as PostCollection;
+use Ladgodoy\Blog\Api\Data\PostInterface;
+use Ladgodoy\Blog\Model\ResourceModel\Post\Collection as PostCollection;
 
 class PostList extends \Magento\Framework\View\Element\Template implements
     \Magento\Framework\DataObject\IdentityInterface
 {
     /**
-     * @var \Lagodoy\Blog\Model\ResourceModel\Post\CollectionFactory
+     * @var \Ladgodoy\Blog\Model\ResourceModel\Post\CollectionFactory
      */
     protected $_postCollectionFactory;
 
@@ -16,12 +16,12 @@ class PostList extends \Magento\Framework\View\Element\Template implements
      * Construct
      *
      * @param \Magento\Framework\View\Element\Template\Context $context
-     * @param \Lagodoy\Blog\Model\ResourceModel\Post\CollectionFactory $postCollectionFactory,
+     * @param \Ladgodoy\Blog\Model\ResourceModel\Post\CollectionFactory $postCollectionFactory,
      * @param array $data
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Lagodoy\Blog\Model\ResourceModel\Post\CollectionFactory $postCollectionFactory,
+        \Ladgodoy\Blog\Model\ResourceModel\Post\CollectionFactory $postCollectionFactory,
         array $data = []
     ) {
         parent::__construct($context, $data);
@@ -29,7 +29,7 @@ class PostList extends \Magento\Framework\View\Element\Template implements
     }
 
     /**
-     * @return \Lagodoy\Blog\Model\ResourceModel\Post\Collection
+     * @return \Ladgodoy\Blog\Model\ResourceModel\Post\Collection
      */
     public function getPosts()
     {
@@ -57,7 +57,7 @@ class PostList extends \Magento\Framework\View\Element\Template implements
      */
     public function getIdentities()
     {
-        return [\Lagodoy\Blog\Model\Post::CACHE_TAG . '_' . 'list'];
+        return [\Ladgodoy\Blog\Model\Post::CACHE_TAG . '_' . 'list'];
     }
 
 }

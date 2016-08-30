@@ -1,5 +1,5 @@
 <?php
-namespace Ashsmith\Blog\Controller\Adminhtml;
+namespace Ladgodoy\Blog\Controller\Adminhtml;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Magento\Framework\Controller\ResultFactory;

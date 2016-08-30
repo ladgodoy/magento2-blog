@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller\View;
+namespace Ladgodoy\Blog\Controller\View;
 
 use \Magento\Framework\App\Action\Action;
 
@@ -27,8 +27,8 @@ class Index extends Action
     public function execute()
     {
         $post_id = $this->getRequest()->getParam('post_id', $this->getRequest()->getParam('id', false));
-        /** @var \Lagodoy\Blog\Helper\Post $post_helper */
-        $post_helper = $this->_objectManager->get('Lagodoy\Blog\Helper\Post');
+        /** @var \Ladgodoy\Blog\Helper\Post $post_helper */
+        $post_helper = $this->_objectManager->get('Ladgodoy\Blog\Helper\Post');
         $result_page = $post_helper->prepareResultPost($this, $post_id);
         if (!$result_page) {
             $resultForward = $this->resultForwardFactory->create();

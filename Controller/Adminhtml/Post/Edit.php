@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller\Adminhtml\Post;
+namespace Ladgodoy\Blog\Controller\Adminhtml\Post;
 
 use Magento\Backend\App\Action;
 
@@ -37,7 +37,7 @@ class Edit extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Lagodoy_Blog::save');
+        return $this->_authorization->isAllowed('Ladgodoy_Blog::save');
     }
 
     /**
@@ -50,7 +50,7 @@ class Edit extends \Magento\Backend\App\Action
         // load layout, set active menu and breadcrumbs
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Lagodoy_blog::post')
+        $resultPage->setActiveMenu('Ladgodoy_blog::post')
             ->addBreadcrumb(__('Blog'), __('Blog'))
             ->addBreadcrumb(__('Manage Blog Posts'), __('Manage Blog Posts'));
         return $resultPage;
@@ -65,7 +65,7 @@ class Edit extends \Magento\Backend\App\Action
     public function execute()
     {
         $id = $this->getRequest()->getParam('post_id');
-        $model = $this->_objectManager->create('Lagodoy\Blog\Model\Post');
+        $model = $this->_objectManager->create('Ladgodoy\Blog\Model\Post');
 
         if ($id) {
             $model->load($id);

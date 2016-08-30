@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Lagodoy_Blog::blog_content" title="Blog" module="Lagodoy_Blog" sortOrder="50" parent="Magento_Backend::content" resource="Lagodoy_Blog::blog_content" />
-        <add id="Lagodoy_Blog::post" title="Posts" module="Lagodoy_Blog" sortOrder="0" parent="Lagodoy_Blog::blog_content" action="blog/post" resource="Lagodoy_Blog::post"/>
+        <add id="Ladgodoy_Blog::blog_content" title="Blog" module="Ladgodoy_Blog" sortOrder="50" parent="Magento_Backend::content" resource="Ladgodoy_Blog::blog_content" />
+        <add id="Ladgodoy_Blog::post" title="Posts" module="Ladgodoy_Blog" sortOrder="0" parent="Ladgodoy_Blog::blog_content" action="blog/post" resource="Ladgodoy_Blog::post"/>
     </menu>
 </config>

@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Block\Adminhtml\Post\Edit;
+namespace Ladgodoy\Blog\Block\Adminhtml\Post\Edit;
 
 /**
  * Adminhtml blog post edit form
@@ -50,7 +50,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      */
     protected function _prepareForm()
     {
-        /** @var \Lagodoy\Blog\Model\Post $model */
+        /** @var \Ladgodoy\Blog\Model\Post $model */
         $model = $this->_coreRegistry->registry('blog_post');
 
         /** @var \Magento\Framework\Data\Form $form */

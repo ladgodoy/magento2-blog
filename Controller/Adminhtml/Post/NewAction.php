@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller\Adminhtml\Post;
+namespace Ladgodoy\Blog\Controller\Adminhtml\Post;
 
 class NewAction extends \Magento\Backend\App\Action
 {
@@ -25,7 +25,7 @@ class NewAction extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Lagodoy_Blog::save');
+        return $this->_authorization->isAllowed('Ladgodoy_Blog::save');
     }
 
     /**

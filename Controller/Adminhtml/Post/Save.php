@@ -1,5 +1,5 @@
 <?php
-namespace Lagodoy\Blog\Controller\Adminhtml\Post;
+namespace Ladgodoy\Blog\Controller\Adminhtml\Post;
 
 use Magento\Backend\App\Action;
 use Magento\TestFramework\ErrorLog\Logger;
@@ -20,7 +20,7 @@ class Save extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Lagodoy_Blog::save');
+        return $this->_authorization->isAllowed('Ladgodoy_Blog::save');
     }
 
     /**
@@ -34,8 +34,8 @@ class Save extends \Magento\Backend\App\Action
         /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
         if ($data) {
-            /** @var \Lagodoy\Blog\Model\Post $model */
-            $model = $this->_objectManager->create('Lagodoy\Blog\Model\Post');
+            /** @var \Ladgodoy\Blog\Model\Post $model */
+            $model = $this->_objectManager->create('Ladgodoy\Blog\Model\Post');
 
             $id = $this->getRequest()->getParam('post_id');
             if ($id) {

@@ -1,5 +1,5 @@
 {
-    "name": "ladgodoy/magento2-blog-module",
+    "name": "ladgodoy/magento2-blog",
     "description": "Um modulo Simples de Blog.",
     "type": "magento2-module",
     "version": "0.5.8-stable",

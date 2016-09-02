@@ -1,8 +1,8 @@
 {
     "name": "ladgodoy/magento2-blog",
-    "description": "Um módulo Simples de Blog.",
+    "description": "Um modulo Simples de Blog.",
     "type": "magento2-module",
-    "version": "1.0.0-stable",
+    "version": "0.5.5-stable",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
@@ -17,14 +17,6 @@
 		"email":"ladgodoy@gmail.com"
 	}
 	],
-	"autoload":{
-		"files":[
-			"registration.php"
-		],
-		"psr-4":{
-			"Ladgodoy\\Blog\\": ""
-		}
-	},
     "extra": {
         "map": [
             [

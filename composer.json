@@ -2,7 +2,7 @@
     "name": "ladgodoy/magento2-blog",
     "description": "Um módulo Simples de Blog.",
     "type": "magento2-module",
-    "version": "1.0.0-alpha1",
+    "version": "1.0.0-alpha",
     "license": [
         "OSL-3.0",
         "AFL-3.0"
@@ -10,6 +10,7 @@
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0",
         "magento/magento-composer-installer": "*"
+		"composer/composer": "@alpha"
     },
 	"authors":[
 	{
